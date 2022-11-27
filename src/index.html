@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>links</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <nav>
+                <div class="flexbox">
+                    <div class="image-box">
+                        <img class="image-box__icon" src="./assets/icon-profile.png" alt="icon">
+                    </div>
+                    <div class="cta-box">
+                        <p class="cta-box__text">ACESSE TOCANDO NAS IMAGENS!</p>
+                        <img class="cta-box__item" src="./assets/seta.png" alt="">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="section">
+                <div class="container">
+                    <div class="flexbox">
+                        <img class="flexbox__links" src="./assets/mentoria.png" alt="mentoria" onclick="goToLink(`mentoria`)">
+                        <img class="flexbox__links" src="./assets/bitcoin.png" alt="book"  onclick="goToLink(`book`)">
+                        <img class="flexbox__links" src="./assets/decentralizado.png" alt="website" onclick="goToLink(`website`)">
+                        <img class="flexbox__links" src="./assets/nasa.png" alt="nasa space apps" onclick="goToLink(`nasa`)">
+                        <img class="flexbox__links" src="./assets/puc.png" alt="pucpr" onclick="goToLink(`puc`)">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="section">
+                <div class="container">
+                    <div class="flexbox">
+                        <img class="flexbox__social-network" src="./assets/whatsapp.png" alt="whatsapp">
+                        <img class="flexbox__social-network" src="./assets/twitter.png" alt="twitter">
+                        <img class="flexbox__social-network" src="./assets/facebook.png" alt="facebook">
+                        <img class="flexbox__social-network" src="./assets/email.png" alt="email">
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script>
+        function goToLink(site) {
+            switch (site) {
+                case "mentoria":
+                    break;
+                case "book":
+                    break;
+                case "website":
+                    window.open("https://descentralizado.com.br") 
+                    break;
+                case "nasa":
+                    window.open("https://2017.spaceappschallenge.org/challenges/warning-danger-ahead/and-you-can-help-fight-fires/teams/juno-radio") 
+                    break;
+                case "puc":
+                    window.open("https://drive.google.com/file/d/1HW8b4XqBytbHm_qNinhXJykjJ4Dh23re/view?usp=share_link") 
+                    break;
+                default:
+                    break;
+            }
+            
+        }
+    </script>
+</body>
+</html>
